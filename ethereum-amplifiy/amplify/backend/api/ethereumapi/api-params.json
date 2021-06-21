@@ -1,0 +1,42 @@
+{
+  "paths": [
+    {
+      "name": "/web3",
+      "lambdaFunction": "ethereumamplifiy27b28a3d",
+      "privacy": {
+        "private": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/web3"
+    }
+  ],
+  "resourceName": "ethereumapi",
+  "apiName": "ethereumapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "ethereumamplifiy27b28a3d"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 0,
+    "authRoleName": "amplify-ethereumamplifiy-dev-134952-authRole",
+    "unAuthRoleName": "amplify-ethereumamplifiy-dev-134952-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "ethereumamplifiy27b28a3d",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
